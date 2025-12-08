@@ -38,6 +38,7 @@ if(true){
 }
 console.log(a)
 
+
 in this case the value of a remains only in the if block and shows error when tried to print
 */
 
@@ -83,7 +84,67 @@ console.log(Number(mm)+nn) //here the answer will be 2347
 /* DOM is used to access html elements which are visible on the screen
 Document Object Model
 
+DOM has 4 pillars
+1.selection of an element
+2. changing html
+3. changing css
+4. event listener
 */
 
-document.getElementById('click').click()
-document.getElementById('click').styleborder="blue"
+//1
+var aa=document.querySelector("h1")
+console.log(aa)
+
+//2
+var aa=document.querySelector("h1")
+aa.innerHTML ="changed html"
+
+//3
+var aa=document.querySelector("h1")
+aa.style.color="red"
+
+//4
+var aa=document.querySelector("h1")
+aa.addEventListener("click",function(){
+    console.log("clicked")
+})
+
+var bulb=document.querySelector("#bulb")
+var on=document.querySelector("#on")
+var flag=0
+
+
+on.addEventListener("click",function(){
+    if(flag==0){
+        bulb.style.backgroundColor="red"
+        console.log("clicked")
+        flag=1
+        
+    }
+    else{
+         bulb.style.backgroundColor="yellow"
+        console.log(" again clicked")
+        flag=0
+    }
+})
+
+
+//selecting multiple elements at single time
+var h=document.querySelector("h1") 
+console.log(h) //this only selects the first h1
+
+var h=document.querySelectorAll("h1") 
+console.log(h) //this selects all h1
+h.forEach(function(e){
+    console.log(e)
+})
+
+//inorder to select using id
+var h=document.querySelector("h1")
+console.log(h)
+
+//inorder to select by class
+document.getElementsByClassName("container")
+
+//inorder to select by tag
+document.getElementsByTagName("h1")
