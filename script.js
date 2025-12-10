@@ -138,7 +138,7 @@ console.log(h) //this selects all h1
 h.forEach(function(e){
     console.log(e)
 })
-
+//hehe
 //inorder to select using id
 var h=document.querySelector("h1")
 console.log(h)
