@@ -139,6 +139,7 @@ h.forEach(function(e){
     console.log(e)
 })
 //hehe
+//hehe
 //inorder to select using id
 var h=document.querySelector("h1")
 console.log(h)
