@@ -27,7 +27,6 @@ if(true){
     let a=5
 }
 console.log(a)
-
 in this case the value of a remains only in the if block and shows error when tried to print
 */
 
