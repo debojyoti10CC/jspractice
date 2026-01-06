@@ -15,7 +15,6 @@ console.log(l)
 var x = "hello"
 x = "hello again"
 
-//hehe
 //let
 let y=4
 
