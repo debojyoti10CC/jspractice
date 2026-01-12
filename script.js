@@ -10,7 +10,7 @@ console.warn("warning")
 const l = window.prompt("type something")
 console.log(l)
 
-
+//hehe
 //var
 var x = "hello"
 x = "hello again"
